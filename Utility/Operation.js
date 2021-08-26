@@ -1,3 +1,4 @@
+
 const fs = require('fs');
 const userInput = require('readline-sync');
 
@@ -70,10 +71,10 @@ class Operation {
     searchByCityState(city, state) {
         let rawdata = fs.readFileSync('../Assets/data.json');
         let data = JSON.parse(rawdata);
-        
+
         data.forEach((element) => {
             if (element._city == city && element._state == state) {
-                console.log(element);
+                console.log(`First Name: ${element._fName}, LastName: ${element._lName}`);
             }
         })
     }
