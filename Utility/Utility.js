@@ -1,4 +1,5 @@
-class Utility{
+class Utility
+{
     fName;
     lName;
     address;
@@ -23,4 +24,4 @@ class Utility{
 let data = new Utility("Varun", "Brahmane", "Loni", "Ahmadnagar", "Maharashtra", 413713, 7040391139, "b@gmail.com");
 console.log(data);
 
-module.exports = new Utility();
+module.exports = Utility;
